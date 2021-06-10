@@ -4,13 +4,15 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Tabela</title>
+	<link rel="stylesheet" href="css/estilo1.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
 </head>
 <body>
 
 	<nav>
       <ul>
-        <li><a href="index.php">Pagina Principal</a></li>
-        <li><a href="formulario.php">Formulario</a></li>
+        <li class="collection-item"><a href="index.php">Pagina Principal</a></li>
+        <li class="collection-item"><a href="formulario.php">Formulario</a></li>
       </ul>
     </nav>
 
@@ -35,16 +37,18 @@
 		<br> <b>?nome=Marcos%20Silva&idade=30</b>
 	</p>
 
-	<table border="1">
+	<p align="center">
+	<table border="1px" cellpadding="5px" cellspacing="0" ID="alter">
 		<tr>
 			<td>Nome do Aluno = <?php echo $nomealuno; ?><td>Idade = <?php echo $idadealuno ?></td>
 		</tr>
-		<tr>
+		<tr class="dif">
 			<td>Nome da Aluna = <?php echo $nomealuno1; ?><td>Idade = <?php echo $idadealuno1 ?></td>
 		</tr>
 		<tr>
 			<td>Nome do Aluno = <?php echo $_GET['nome'];; ?><td>Idade = <?php echo $_GET['idade'] ?></td>
 		</tr>
 	</table>
+ </p>
 </body>
 </html>
